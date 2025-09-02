@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Management</title>
+
+</head>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+
+            
+            <div class="lg:col-span-1 space-y-6">
+                <h2 class="text-xl font-bold text-gray-800">Account Management</h2>
+
+                
+                <div class="space-y-6">
+                    <div class="relative w-full aspect-square bg-pink-100 rounded-2xl p-4 flex items-center justify-center">
+                        <img src="FOTO.jpg" alt="Foto Profil Ajie Raka" class="w-full h-full object-cover rounded-xl">
+                        <button class="absolute top-4 right-4 bg-white/80 backdrop-blur-sm rounded-full p-2 hover:bg-white transition-colors duration-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                    <button class="w-full text-center bg-white border border-gray-300 rounded-lg py-2.5 px-4 text-sm font-semibold text-gray-700 hover:bg-gray-50 transition-colors duration-200">
+                        Upload Photo
+                    </button>
+                </div>
+
+                
+                <div class="space-y-4 pt-4">
+                    <div>
+                        <label for="old-password" class="block text-sm font-medium text-gray-700 mb-1">Old Password</label>
+                        <input type="password" id="old-password" value="************" class="w-full border border-gray-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-shadow duration-200">
+                    </div>
+                    <div>
+                        <label for="new-password" class="block text-sm font-medium text-gray-700 mb-1">New Password</label>
+                        <input type="password" id="new-password" value="************" class="w-full border border-gray-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-shadow duration-200">
+                    </div>
+                    <button class="w-full text-center bg-white border border-gray-300 rounded-lg py-2.5 px-4 text-sm font-semibold text-gray-700 hover:bg-gray-50 transition-colors duration-200">
+                        Change Password
+                    </button>
+                </div>
+            </div>
+     
+            <div class="lg:col-span-2">
+                <form class="space-y-8">
+                    
+                    <div>
+                        <h3 class="text-lg font-bold text-gray-800 mb-4">Profile Information</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="username" class="block text-sm font-medium text-gray-700 mb-1">Username</label>
+                                <input type="text" id="username" value="Ajie Raka AL Surya Suherman" class="w-full border border-gray-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-shadow duration-200">
+                            </div>
+                            <div>
+                                <label for="first-name" class="block text-sm font-medium text-gray-700 mb-1">Frist Name</label>
+                                <input type="text" id="first-name" value="Ajie Raka" class="w-full border border-gray-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-shadow duration-200">
+                            </div>
+                            <div>
+                                <label for="nickname" class="block text-sm font-medium text-gray-700 mb-1">Nickname</label>
+                                <input type="text" id="nickname" value="Ujo" class="w-full border border-gray-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-shadow duration-200">
+                            </div>
+                            <div>
+                                <label for="role" class="block text-sm font-medium text-gray-700 mb-1">Role</label>
+                                <select id="role" class="w-full border border-gray-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-shadow duration-200">
+                                    <option selected>Subscriber</option>
+                                    <option>Administrator</option>
+                                    <option>Editor</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="last-name" class="block text-sm font-medium text-gray-700 mb-1">Last Name</label>
+                                <input type="text" id="last-name" value="Al Surya Suherman" class="w-full border border-gray-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-shadow duration-200">
+                            </div>
+                            <div>
+                                <label for="display-name" class="block text-sm font-medium text-gray-700 mb-1">Display Name Public as</label>
+                                <input type="text" id="display-name" value="Jows" class="w-full border border-gray-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-shadow duration-200">
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div>
+                        <h3 class="text-lg font-bold text-gray-800 mb-4">Contact Info</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email (Requaired)</label>
+                                <input type="email" id="email" value="adjieraka006@gmail.com" class="w-full border border-gray-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-shadow duration-200">
+                            </div>
+                            <div>
+                                <label for="whatsapp" class="block text-sm font-medium text-gray-700 mb-1">WhatsApp</label>
+                                <input type="text" id="whatsapp" value="085173053511" class="w-full border border-gray-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-shadow duration-200">
+                            </div>
+                            <div>
+                                <label for="website" class="block text-sm font-medium text-gray-700 mb-1">Website</label>
+                                <input type="url" id="website" class="w-full border border-gray-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-shadow duration-200">
+                            </div>
+                             <div>
+                                <label for="telegram" class="block text-sm font-medium text-gray-700 mb-1">Telegram</label>
+                                <input type="text" id="telegram" class="w-full border border-gray-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-shadow duration-200">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div>
+                        <h3 class="text-lg font-bold text-gray-800 mb-4">About The User</h3>
+                        <div>
+                            <label for="bio" class="block text-sm font-medium text-gray-700 mb-1">Biographical Information</label>
+                            <textarea id="bio" rows="5" class="w-full border border-gray-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-shadow duration-200">I am a Graphic Designer, two years building professional experience in 
+the Graphic Design world, focusing on creativity, visual consistency and 
+detailed execution</textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
