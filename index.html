@@ -1,20 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>Web Saya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
 </head>
-<body>
-    <h1>Selamat datang</h1>
-    <p>Ini adalah halaman latihan pertama pembuatan web dengan HTML pada pelatihan
-        berbasis proyek tahun 2025
-    </p>
-    <ol>
-        <li><a href="profile.html">Profile</a></li>
-        <li><a href="data.html">Data</a></li>
-        <li>Info</li>
-        <li>Kontak</li>
-    </ol>
-</body></h1>
+<body class="bg-white">
+    <header class="bg-blue-600 text-black shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold">
+                Web Saya
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#" class="hover:text-blue-200 transition-colors duration-200">Beranda</a>
+                <a href="#" class="hover:text-blue-200 transition-colors duration-200">Tentang</a>
+                <a href="#" class="hover:text-blue-200 transition-colors duration-200">Layanan</a>
+                <a href="#" class="hover:text-blue-200 transition-colors duration-200">Kontak</a>
+            </div>
+            <!-- Tombol Menu Mobile (opsional, untuk tampilan lebih baik di ponsel) -->
+            <div class="md:hidden">
+                <button class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Bagian Hero -->
+        <section class="bg-blue-100 text-center py-20 px-6">
+            <h1 class="text-4xl font-bold text-gray-800 mb-4">Selamat Datang di Website Saya</h1>
+            <p class="text-lg text-gray-600">Ini adalah halaman web dengan navigasi menu di atas.</p>
+        </section>
+
+        <!-- Bagian Konten Utama -->
+        <section class="container mx-auto px-6 py-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Konten Utama</h2>
+            <p class="text-gray-700">Ini adalah contoh konten utama dari halaman web. Anda bisa menambahkan teks, gambar, atau elemen lainnya di sini.</p>
+        </section>
+    </main>
+
+</body>
 </html>
+
